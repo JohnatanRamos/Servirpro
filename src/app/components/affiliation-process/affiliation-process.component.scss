@@ -1,0 +1,90 @@
+@import "/src/styles/variables";
+
+.content-affiliation-process {
+    background-color: $primary;
+}
+
+.affiliation-process-title {
+    padding: 35px 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-steps {
+    margin: 40px 0px;
+}
+
+.button-affiliation {
+    display: flex;
+    justify-content: center;
+}
+
+.content-steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-step-1 {
+    background: #33303026;
+    border-radius: 12px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    max-width: 245px;
+    margin: 25px 0px;
+
+    .step-icon {
+        display: block;
+        width: 170px;
+        height: 90px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.step-1 {
+    background: url('../../../assets/images/IC-01.png') center center no-repeat;
+    background-size: 50% auto;
+}
+
+.step-2 {
+    background: url('../../../assets/images/IC-02.png') center center no-repeat;
+    background-size: 50% auto;
+}
+
+.step-3 {
+    background: url('../../../assets/images/IC-03.png') center center no-repeat;
+    background-size: 50% auto;
+}
+
+.step-4 {
+    background: url('../../../assets/images/IC-04.png') center center no-repeat;
+    background-size: 50% auto;
+}
+
+.number {
+    font-size: 50px;
+    margin-top: 22px;
+}
+
+@media screen and (max-width: 425px) {
+    .affiliation-process-title {
+        max-width: 245px;
+    }
+
+    .number {
+        display: none;
+    }
+}
