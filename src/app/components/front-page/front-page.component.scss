@@ -1,0 +1,73 @@
+@import "/src/styles/variables";
+
+.front-page {
+    background: url('../../../assets/images/portada_escritorio.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    // height: 725px;
+    // height: calc(100vh - 75px);
+    // margin-top: 75px;
+
+    .title {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    button {
+        justify-content: center;
+        align-self: center;
+        border-radius: 25px;
+        border-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        min-width: 140px;
+        height: 22px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
+        margin-top: 1px;
+    }
+}
+
+.button {
+    position: absolute;
+    top: 595px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bck-color-white {
+    background-color: white;
+}
+
+.bck-color-primary {
+    background-color: $primary;
+}
+
+@media screen and (max-width: 425px) {
+    .front-page {
+        background: url('../../../assets/images/portada_celular.jpg') no-repeat center center;
+        background-size: cover;
+
+        p {
+            display: none;
+        }
+
+        .button-desktop {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .button-mobile {
+        display: none !important;
+    }
+}
