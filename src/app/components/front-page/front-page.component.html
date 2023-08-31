@@ -8,9 +8,22 @@
             En solo <span class="color-white"> &nbsp;24 horas</span>
         </button>
         <button class="button-mobile bck-color-white" style="min-width: 218px;">
-            En solo <span class="color-primary"> &nbsp;24 horas</span> a <span class="color-primary">&nbsp; 48 horas</span>
+            En solo <span class="color-primary"> &nbsp;24 horas</span> a <span class="color-primary">&nbsp; 48
+                horas</span>
         </button>
     </div>
 
+    <span class="button-wpp">
+        <div style="width: 20px; height: 20px;" (click)="op.show($event)"></div>
+    </span>
+
     <app-generic-button class="button" [buttonName]="'QUIERO AFILIARME'"></app-generic-button>
 </section>
+
+<p-overlayPanel #op>
+    <ng-template pTemplate="content">
+        <h4>Comunícate con uno de
+            nuestros asesores...
+        </h4>
+    </ng-template>
+</p-overlayPanel>

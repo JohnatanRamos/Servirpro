@@ -51,6 +51,34 @@
     background-color: $primary;
 }
 
+.button-wpp {
+    background: url('../../../assets/images/button-wpp.svg') center center no-repeat;
+    width: 80px;
+    height: 72px;
+    position: absolute;
+    top: 510px;
+    right: 2%;
+    transform: translate(13%, -50%);
+}
+
+::ng-deep.p-overlaypanel:after {
+    border-bottom-color: black;
+}
+
+::ng-deep .p-overlaypanel-content {
+    background-color: black;
+    color: $secondary;
+    font-family: 'Questrial', sans-serif;
+    border-radius: 8px;
+    padding: 10px !important;
+    width: 200px;
+    text-align: center;
+}
+
+::ng-deep .p-overlaypanel {
+    max-width: 200px;
+}
+
 @media screen and (max-width: 425px) {
     .front-page {
         background: url('../../../assets/images/portada_celular.jpg') no-repeat center center;
