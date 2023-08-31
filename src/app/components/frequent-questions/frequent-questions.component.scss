@@ -1,0 +1,54 @@
+@import "/src/styles/variables";
+
+.content-frequent-questions {
+    background-color: $primary;
+}
+
+.frequent-questions-title {
+    padding: 35px 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-questions {
+    padding: 40px 60px;
+}
+
+.button-questions {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+::ng-deep .p-component {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 9px;
+    align-items: center;
+}
+
+::ng-deep .p-accordion-header-link {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 4px;
+    background: #e9ecef !important;
+    color: black !important;
+    font-weight: 400 !important;
+    font-family: 'Questrial', sans-serif;
+}
+
+::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+    border-radius: 25px;
+    padding: 0.7rem 1.3rem;
+}
+
+::ng-deep .p-accordion .p-accordion-content {
+    border-radius: 0px 0px 25px 25px;
+}
+
+::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    color: white !important;
+    background: $primary !important;
+    box-shadow: none;
+}

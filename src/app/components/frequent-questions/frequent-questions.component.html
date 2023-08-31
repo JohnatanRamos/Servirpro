@@ -1,0 +1,31 @@
+<div class="content-frequent-questions">
+    <div class="color-white frequent-questions-title">
+        <h2> Preguntas frecuentes </h2>
+    </div>
+</div>
+<div class="section-questions">
+    <div class="questions">
+
+        <p-accordion class="w-full">
+
+            <ng-container *ngFor="let item of questions">
+                <p-accordionTab>
+                    <ng-template pTemplate="header">
+                        <div class="content-title">
+                            {{ item.title }}
+                            <i class="pi pi-calendar mr-2"></i>
+                        </div>
+                    </ng-template>
+                    <ng-template pTemplate="content">
+                        <p>
+                            {{ item.answer }}
+                        </p>
+                    </ng-template>
+                </p-accordionTab>
+            </ng-container>
+
+        </p-accordion>
+
+    </div>
+    <app-generic-button class="button-questions" [buttonName]="'QUIERO AFILIARME'"></app-generic-button>
+</div>
