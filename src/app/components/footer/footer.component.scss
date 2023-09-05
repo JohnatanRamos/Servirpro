@@ -1,0 +1,109 @@
+@import '/src/styles/variables';
+
+
+.content-footer {
+    background: black;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+p {
+    text-align: center;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.logo-footer {
+    position: relative;
+    width: 160px;
+    height: 65px;
+    background: url('../../../assets/images/logo_footer.svg') no-repeat center center;
+    background-size: 155px 58px;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-logo {
+    padding-bottom: 35px;
+}
+
+.msj {
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+}
+
+.wpp {
+    background-image: url('../../../assets/images/F-12.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ig {
+    background-image: url('../../../assets/images/F-13.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gmail {
+    background-image: url('../../../assets/images/F-15.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.facebook {
+    background-image: url('../../../assets/images/F-14.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-info {
+    display: grid;
+    grid-template-columns: 25px 180px;
+    justify-content: center;
+    column-gap: 7px;
+}
+
+.content-icons {
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.text-start {
+    text-align: start;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-information {
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-info-p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+@media screen and (max-width: 518px) {
+    .footer-information {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 80px;
+    }
+}

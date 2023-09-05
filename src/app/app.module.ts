@@ -10,6 +10,8 @@ import { AffiliationProcessComponent } from './components/affiliation-process/af
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { FrequentQuestionsComponent } from './components/frequent-questions/frequent-questions.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './components/footer/footer.component';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -22,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TestimonialsComponent,
     FrequentQuestionsComponent,
     BrowserAnimationsModule,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
