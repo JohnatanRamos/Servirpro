@@ -17,8 +17,7 @@
                         </div>
                     </ng-template>
                     <ng-template pTemplate="content">
-                        <p>
-                            {{ item.answer }}
+                        <p [innerHTML]="item.answer">
                         </p>
                     </ng-template>
                 </p-accordionTab>
