@@ -1,0 +1,9 @@
+@media screen and (min-width: 653px) {
+    .responsive-container {
+        display: flex;
+
+        app-office-video, app-affiliation-process {
+            width: 50%;
+        }
+    }
+}

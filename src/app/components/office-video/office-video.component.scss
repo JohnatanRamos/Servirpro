@@ -1,10 +1,30 @@
 .content-office-video {
     background-color: black;
+
+    img {
+        width: 100%;
+    }
 }
 
 .office-video-title {
-    padding: 35px 30px;
-    max-width: 220px;
-    text-align: center;
+    min-height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
+    
+    h2 {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    p {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 653px) {
+    .office-video-title {
+        padding: 25px 0px;
+    }
 }
