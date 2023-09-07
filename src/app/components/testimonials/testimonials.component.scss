@@ -7,3 +7,29 @@
     text-align: center;
     margin: 0 auto;
 }
+
+.coursel {
+    background-color: #80808038;
+    padding: 40px 30px;
+}
+
+.content-image {
+    padding-right: 25px;
+}
+
+
+@media screen and (max-width: 653px) { 
+    .coursel {
+        background-color: #80808038;
+        padding: 0px;
+    }
+    
+    .content-image {
+        padding-right: 0px;
+    }
+
+    ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev,
+    ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+        display: none;
+    }
+}
