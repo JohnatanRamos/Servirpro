@@ -47,6 +47,7 @@
 }
 
 .step {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -89,7 +90,8 @@
 
 .number {
     font-size: 50px;
-    margin-top: 22px;
+    position: absolute;
+    top: 15px;
 }
 
 .img-title {

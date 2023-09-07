@@ -1,13 +1,10 @@
 @import "/src/styles/variables";
 
 .front-page {
-    background: url('../../../assets/images/portada_escritorio.jpg') no-repeat center center;
+    background: url(https://vilean.s3.us-east-2.amazonaws.com/Servirpro/Portada+escritorio.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     height:100vh;
-    // height: 725px;
-    // height: calc(100vh - 75px);
-    // margin-top: 75px;
 
     .title {
         position: absolute;
@@ -81,7 +78,7 @@
 
 @media screen and (max-width: 425px) {
     .front-page {
-        background: url('../../../assets/images/portada_celular.jpg') no-repeat center center;
+        background: url(https://vilean.s3.us-east-2.amazonaws.com/Servirpro/Portada+celular.jpg) no-repeat center center;
         background-size: cover;
 
         p {
