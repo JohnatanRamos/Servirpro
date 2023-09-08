@@ -11,5 +11,7 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
   styleUrls: ['./front-page.component.scss']
 })
 export class FrontPageComponent {
-
+  openUrl() {
+    window.open('https://wa.me/3193029089', '_blank');
+  }
 }

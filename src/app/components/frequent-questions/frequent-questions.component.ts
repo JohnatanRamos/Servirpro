@@ -55,4 +55,8 @@ export class FrequentQuestionsComponent {
     title: '¿Me envían las planillas de pago?',
     answer: "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Sí, tienes derecho a exigir tu planilla de pago cada mes, allí podrás verificar que los aportes se están haciendo correctamente.</span></p>"
   }];
+
+  openUrl() {
+    window.open('https://wa.me/3193029089', '_blank');
+  }
 }

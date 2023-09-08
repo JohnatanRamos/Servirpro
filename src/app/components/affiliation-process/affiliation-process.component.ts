@@ -10,5 +10,7 @@ import { GenericButtonComponent } from 'src/app/shared/generic-button/generic-bu
   styleUrls: ['./affiliation-process.component.scss']
 })
 export class AffiliationProcessComponent {
-
+  openUrl() {
+    window.open('https://wa.me/3193029089', '_blank');
+  }
 }

@@ -17,7 +17,7 @@
         <div style="width: 20px; height: 20px;" (click)="op.show($event)"></div>
     </span>
 
-    <app-generic-button class="button" [buttonName]="'QUIERO AFILIARME'"></app-generic-button>
+    <app-generic-button class="button" (onEmmitClick)="openUrl()" [buttonName]="'QUIERO AFILIARME'"></app-generic-button>
 </section>
 
 <p-overlayPanel #op>
