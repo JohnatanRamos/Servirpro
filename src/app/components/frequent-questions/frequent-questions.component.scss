@@ -35,7 +35,7 @@
     background: #e9ecef !important;
     color: black !important;
     font-weight: 400 !important;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
@@ -51,6 +51,10 @@
     color: white !important;
     background: $primary !important;
     box-shadow: none;
+}
+
+::ng-deep .p-toggleable-content {
+    font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
