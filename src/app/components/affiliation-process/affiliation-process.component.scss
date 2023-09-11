@@ -8,7 +8,7 @@
     padding: 35px 0px;
     text-align: center;
     margin: 0 auto;
-    min-height: 105px;
+    min-height: 125px;
 }
 
 .section-steps {
@@ -31,7 +31,7 @@
     margin-bottom: 20px;
     justify-items: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 545px;
     column-gap: 30px;
     row-gap: 40px;
 }
@@ -53,8 +53,8 @@
     justify-content: flex-start;
     align-items: center;
     gap: 12px;
-    max-width: 245px;
-    min-height: 172px;
+    max-width: 253px;
+    min-height: 200px;
 
     .step-icon {
         display: block;
@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 653px) {
     .affiliation-process-title {
-        max-width: 245px;
+        max-width: 255px;
     }
 
     .number {
