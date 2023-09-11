@@ -1,3 +1,40 @@
+.button-wpp {
+    background: url('../assets/images/button-wpp.svg') center center no-repeat;
+    width: 80px;
+    height: 72px;
+    position: sticky;
+    top: 440px;
+    display: block;
+    left: 93%;
+    z-index: 100;
+}
+
+.tooltip {
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    width: 220px;
+    visibility: hidden;
+    background-color: black;
+    color: #A9E250;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: -70%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 @media screen and (min-width: 653px) {
     .responsive-container {
         display: flex;

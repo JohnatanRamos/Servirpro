@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'servirpro';
+
+  openUrl() {
+    window.open('https://wa.me/3193029089', '_blank');
+  }
 }

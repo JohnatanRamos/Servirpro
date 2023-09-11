@@ -1,4 +1,5 @@
 <section class="front-page">
+    
     <div class="title">
         <h1 class="color-white font-bold">Afiliaciones</h1>
         <p class="color-white">sin pagos por adelantado</p>
@@ -7,27 +8,11 @@
         <button class="button-desktop bck-color-primary">
             En solo <span class="color-white"> &nbsp;24 horas</span>
         </button>
-        <button class="button-mobile bck-color-white" style="min-width: 240px;">
-            En solo <span class="color-primary"> &nbsp;24 horas</span> a <span class="color-primary">&nbsp; 48
+        <button class="button-mobile bck-color-white" style="min-width: 220px;">
+            En solo <span class="color-primary"> &nbsp;24 &nbsp;</span> a <span class="color-primary">&nbsp; 48
                 horas</span>
         </button>
     </div>
 
-    <span class="button-wpp tooltip" (click)="openUrl()">
-        <span class="tooltiptext">
-            Comunícate con uno de
-            nuestros asesores...
-        </span>
-        <!-- <div style="width: 20px; height: 20px;" ></div> -->
-    </span>
-
     <app-generic-button class="button" (onEmmitClick)="openUrl()" [buttonName]="'QUIERO AFILIARME'"></app-generic-button>
 </section>
-
-<p-overlayPanel #op>
-    <ng-template pTemplate="content">
-        <h4>Comunícate con uno de
-            nuestros asesores...
-        </h4>
-    </ng-template>
-</p-overlayPanel>

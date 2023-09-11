@@ -1,8 +1,16 @@
 <section class="content-office-video">
     <div class="color-white office-video-title">
-       <h2> Tenemos oficina
-        en el <span class="color-primary">Poblado, Medellin</span></h2>
+        <h2> Tenemos oficina
+            en el <span class="color-primary">Poblado, Medellin</span></h2>
         <p class="text-center">Calle 8 #43 c - 68 Co-Work Latam Astorga Oficina 102</p>
     </div>
-    <img src="https://vilean.s3.us-east-2.amazonaws.com/Servirpro/office.webp" alt="oficina">
+
+    <swiper [config]="config">
+        <ng-template swiperSlide *ngFor="let item of nameImages; let index = index">
+            <div class="container-image-coursel">
+                <img class="responsive-img" fill [src]="item" [alt]="'Imagen' + index" />
+            </div>
+        </ng-template>
+    </swiper>
+
 </section>

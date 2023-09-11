@@ -48,34 +48,6 @@
     background-color: $primary;
 }
 
-.button-wpp {
-    background: url('../../../assets/images/button-wpp.svg') center center no-repeat;
-    width: 80px;
-    height: 72px;
-    position: absolute;
-    top: 510px;
-    right: 2%;
-    transform: translate(13%, -50%);
-}
-
-::ng-deep.p-overlaypanel:after {
-    border-bottom-color: black;
-}
-
-::ng-deep .p-overlaypanel-content {
-    background-color: black;
-    color: $secondary;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 8px;
-    padding: 10px !important;
-    width: 200px;
-    text-align: center;
-}
-
-::ng-deep .p-overlaypanel {
-    max-width: 200px;
-}
-
 @media screen and (max-width: 425px) {
     .front-page {
         background: url(https://vilean.s3.us-east-2.amazonaws.com/Servirpro/Portada+celular.jpg) no-repeat center center;
@@ -99,30 +71,4 @@
     .button-mobile {
         display: none !important;
     }
-}
-
-.tooltip {
-    cursor: pointer;
-}
-
-.tooltip .tooltiptext {
-    width: 220px;
-    visibility: hidden;
-    background-color: black;
-    color: #A9E250;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: -70%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
 }

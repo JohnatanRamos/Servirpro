@@ -1,9 +1,9 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 .content-office-video {
     background-color: black;
-
-    img {
-        width: 100%;
-    }
 }
 
 .office-video-title {
@@ -21,6 +21,30 @@
     p {
         margin-top: 12px;
     }
+}
+
+.swiper {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-image-coursel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.responsive-img {
+    width: 100%;
+    object-fit: cover;
+    position: relative !important;
+    max-width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 653px) {
