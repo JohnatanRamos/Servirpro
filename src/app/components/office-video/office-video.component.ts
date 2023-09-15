@@ -27,10 +27,6 @@ export class OfficeVideoComponent {
     spaceBetween: 10,
     navigation: true,
     scrollbar: { draggable: true },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
   };
 
   nameImages = [

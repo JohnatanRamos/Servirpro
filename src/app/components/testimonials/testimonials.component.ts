@@ -1,33 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CarouselModule, CarouselResponsiveOptions } from 'primeng/carousel';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  SwiperOptions,
+  EffectCoverflow,
+} from 'swiper';
+import { SwiperModule } from 'swiper/angular';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [CommonModule, CarouselModule],
+  imports: [CommonModule, SwiperModule],
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class TestimonialsComponent {
-  responsiveOptions: CarouselResponsiveOptions[] = [
-    {
-      breakpoint: '3000px',
-      numVisible: 3,
-      numScroll: 1,
+  config: SwiperOptions = {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: true,
+    scrollbar: { draggable: true },
+    breakpoints: {
+      582: {
+        slidesPerView: 3,
+      },
     },
-    {
-      breakpoint: '1000px',
-      numVisible: 2,
-      numScroll: 1,
-    },
-    {
-      breakpoint: '800px',
-      numVisible: 1,
-      numScroll: 1,
-
-    },
-  ];
+  };
 
   nameImages = [
     'https://vilean.s3.us-east-2.amazonaws.com/Servirpro/IMG_2044.webp',

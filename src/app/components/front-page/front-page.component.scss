@@ -57,18 +57,8 @@
             display: none;
         }
 
-        .button-desktop {
-            display: none;
-        }
-
         .title { 
             top: 150px;
         }
-    }
-}
-
-@media screen and (min-width: 426px) {
-    .button-mobile {
-        display: none !important;
     }
 }

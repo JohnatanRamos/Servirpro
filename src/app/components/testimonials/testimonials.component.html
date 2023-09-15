@@ -1,18 +1,16 @@
 <div class="content-testimonials">
-    <div class="color-white testimonials-title">
-        <h2> Testimonios </h2>
-    </div>
+  <div class="color-white testimonials-title">
+    <h2> Testimonios </h2>
+  </div>
 </div>
+
 <div class="coursel">
-    <p-carousel [value]="nameImages" [circular]="true" [numVisible]="1" [numScroll]="1"
-    [responsiveOptions]="responsiveOptions" [showIndicators]="false">
-    <ng-template let-image pTemplate="item">
 
-        <div class="content-image">
-          <img oncontextmenu='return false' onkeydown='return false' [src]="image"
-            [alt]="image" width="100%" height="100%" />
+    <swiper [config]="config">
+      <ng-template swiperSlide *ngFor="let item of nameImages; let index = index">
+        <div class="container-image-coursel">
+          <img class="responsive-img" fill [src]="item" [alt]="'Imagen' + index" />
         </div>
-
-    </ng-template>
-  </p-carousel>
+      </ng-template>
+    </swiper>
 </div>

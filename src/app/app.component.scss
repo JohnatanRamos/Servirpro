@@ -2,10 +2,10 @@
     background: url('../assets/images/button-wpp.svg') center center no-repeat;
     width: 80px;
     height: 72px;
-    position: sticky;
-    top: 440px;
+    position: fixed;
+    top: 400px;
     display: block;
-    left: 93%;
+    left: calc(100% - 80px);
     z-index: 100;
 }
 
@@ -32,9 +32,11 @@
     .responsive-container {
         display: flex;
 
-        app-office-video,
+        app-office-video {
+            width: 34%;
+        }
         app-affiliation-process {
-            width: 50%;
+            width: 66%;
         }
     }
 }

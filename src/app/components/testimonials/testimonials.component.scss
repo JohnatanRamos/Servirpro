@@ -17,20 +17,6 @@
     padding-right: 25px;
 }
 
-::ng-deep .p-carousel .p-carousel-content .p-carousel-prev,
-::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
-    color: white;
-}
-
-.coursel ::ng-deep .p-icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
-    margin-right: 25px;
-}
-
 @media screen and (max-width: 653px) {
     .coursel {
         background-color: #80808038;
@@ -39,10 +25,5 @@
 
     .content-image {
         padding-right: 0px;
-    }
-
-    ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev,
-    ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
-        display: none;
     }
 }
