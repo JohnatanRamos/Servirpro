@@ -21,11 +21,12 @@
 }
 
 ::ng-deep .p-component {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 45px;
     row-gap: 9px;
-    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 ::ng-deep .p-accordion-header-link {
