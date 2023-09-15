@@ -1,9 +1,13 @@
 <app-header></app-header>
 
+
 <span class="button-wpp tooltip" (click)="openUrl()">
-    <span class="tooltiptext">
-        Comunícate con uno de
-        nuestros asesores...
+    <span class="blur-out-expand"></span>
+    <span class="tooltiptext" [hidden]="hideTooltip">
+        <p class="text-start">
+            Comunícate con uno de
+            nuestros asesores...
+        </p>
     </span>
 </span>
 
