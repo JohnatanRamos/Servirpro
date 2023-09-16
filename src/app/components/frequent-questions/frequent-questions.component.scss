@@ -20,6 +20,10 @@
     margin-top: 40px;
 }
 
+.content-question-column {
+    width: 33%;
+}
+
 ::ng-deep .p-component {
     column-gap: 45px;
     row-gap: 9px;
@@ -60,14 +64,16 @@
 
 @media screen and (max-width: 767px) {
     ::ng-deep .p-component {
-        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        row-gap: 0px;
+    }
+
+    .content-question-column {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 492px) {
-    ::ng-deep .p-component {
-        grid-template-columns: 1fr;
-    }
 
     .section-questions {
         padding: 40px 14px;
