@@ -12,6 +12,6 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
 })
 export class FrontPageComponent {
   openUrl() {
-    window.open('https://wa.me/3193029089', '_blank');
+    window.open('https://api.whatsapp.com/send?phone=3193029089&text=Hola,%20visit%C3%A9%20el%20sitio%20web%20y%20estoy%20interesado%20en%20afiliarme', '_blank');
   }
 }
